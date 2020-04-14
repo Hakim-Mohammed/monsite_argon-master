@@ -14,7 +14,7 @@
      linkExactActiveClass: "active",
      routes: [
          {
-             path: "/accueil",
+             path: "/",
              name: "accueil",
              components: {
                  header: AppHeader,
@@ -22,6 +22,15 @@
                  footer: AppFooter
              }
          },
+         {
+            path: "/accueil",
+            name: "accueil",
+            components: {
+                header: AppHeader,
+                default: Accueil,
+                footer: AppFooter
+            }
+        },
          {
              path: "/plongée",
              name: "plongée",
