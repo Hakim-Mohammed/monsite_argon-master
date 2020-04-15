@@ -2,7 +2,37 @@
     background-color:#3DB5E3;
    
 }
-
+.background{
+    margin-top: -100px;
+}
 .navbar{
     background-color: #E94D14;
 }
+
+/* body{
+    background-image: url(img/brand/piscineback.png)!important;
+} */
+
+hr{
+    height: 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    color:#E94D14;
+    background-color:#E94D14;
+    border: 0; 
+}
+
+
+.lead{
+    font-size: large;
+    margin-left: 20px ;
+}
+
+.featurette-heading , h2, h1{
+    margin-left: 20px ;
+    color: #E94D14;
+    /* font-size: 2.25vw; */
+
+}
+

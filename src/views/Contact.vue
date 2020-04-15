@@ -1,5 +1,5 @@
 <template>
-    <section class="section section-shaped section-lg my-0">
+     <section class="section section-shape section-lg my-0 section-contact-us">
         <div class="shape shape-style-1 bg-gradient-default">
             <span></span>
             <span></span>
@@ -9,70 +9,49 @@
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <div class="container pt-lg-md">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <card type="secondary" shadow
-                          header-classes="bg-white pb-5"
-                          body-classes="px-lg-5 py-lg-5"
-                          class="border-0">
-                        <template>
-                            <div class="text-muted text-center mb-3">
-                                <small>Sign in with</small>
-                            </div>
-                            <div class="btn-wrapper text-center">
-                                <base-button type="neutral">
-                                    <img slot="icon" src="img/icons/common/github.svg">
-                                    Github
-                                </base-button>
+           
+        </div>       
+            <div class="container pt-lg-md">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                        <card gradient="secondary" shadow body-classes="p-lg-5">
+                            <h4 class="mb-1">Contactez-nous?</h4>
 
-                                <base-button type="neutral">
-                                    <img slot="icon" src="img/icons/common/google.svg">
-                                    Google
-                                </base-button>
-                            </div>
-                        </template>
-                        <template>
-                            <div class="text-center text-muted mb-4">
-                                <small>Or sign up with credentials</small>
-                            </div>
-                            <form role="form">
-                                <base-input alternative
-                                            class="mb-3"
-                                            placeholder="Name"
-                                            addon-left-icon="ni ni-hat-3">
-                                </base-input>
-                                <base-input alternative
-                                            class="mb-3"
-                                            placeholder="Email"
-                                            addon-left-icon="ni ni-email-83">
-                                </base-input>
-                                <base-input alternative
-                                            type="password"
-                                            placeholder="Password"
-                                            addon-left-icon="ni ni-lock-circle-open">
-                                </base-input>
-                                <div class="text-muted font-italic">
-                                    <small>password strength:
-                                        <span class="text-success font-weight-700">strong</span>
-                                    </small>
-                                </div>
-                                <base-checkbox>
-                                    <span>I agree with the
-                                        <a href="#">Privacy Policy</a>
-                                    </span>
-                                </base-checkbox>
-                                <div class="text-center">
-                                    <base-button type="primary" class="my-4">Create account</base-button>
-                                </div>
-                            </form>
-                        </template>
-                    </card>
+                             <base-input class="mt-5"
+                                        alternative
+                                        placeholder="Email"
+                                        addon-left-icon="ni ni-email-83">
+                                        <!-- <small id="emailHint" class="form-text text-muted">Nous ne vendons ni ne transmettons vos coordonnées à des tiers à des fins de marketing.</small> -->
+                            </base-input>
+                            <base-input 
+                                        alternative
+                                        placeholder="Nom"
+                                        addon-left-icon="ni ni-user-run">
+                            </base-input>
+                           
+                            <base-input class="mb-4">
+                                    <textarea class="form-control form-control-alternative" name="name" rows="4"
+                                              cols="80" placeholder="Entrer votre message..."></textarea>
+                            </base-input>
+                            <base-button type="default" round block size="lg">
+                                Envoyé
+                            </base-button>
+                        </card>
+                    </div>
+                     <div class="col-sm-6 text-center justify-content-center">
+                        <address class="img-thumbnail">
+                            <br>
+                            <p>Vous pouvez aussi nous contacter à cette adresse :</p>
+                            <strong>CSMB Fontenay-Trésigny</strong><br>
+                            Centre aquatique la vague<br>
+                            Avenue Pierre Courbertin<br>
+                            77610 Fontenay-Trésigny<br>
+                        </address>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+           
+        </section>
 </template>
 <script>
 export default {};

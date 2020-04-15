@@ -1,15 +1,15 @@
 <template>
 <div>
-    <b-navbar toggleable="lg" style="background-color : #E94D14">
+    <b-navbar toggleable="lg" style="background-color : #E94D14" type="dark" >
         <b-navbar-brand href="#">
-            <img src="img/brand/logo.jpg" style="width:100px; height:100px;" alt="Logo"><strong> CSMB </strong> Fontenay-trésigny
+            <img src="img/brand/logo.jpg" style="width:100px; height:100px;" alt="Logo"><strong> CSMB </strong> Fontenay-trésigny</br> Plongée et Hockey subaquatique
         </b-navbar-brand>
 
         <b-navbar-toggle  style="color:black;" target="nav-collapse">☰</b-navbar-toggle>
 
-        <b-collapse id="nav-collapse"  class="ml" is-nav>
+        <b-collapse id="nav-collapse"  class="nav justify-content-end text-white" style="color : yellow;" is-nav>
             <b-nav-item-dropdown text="Accueil" right>
-                <router-link to="/accueil" class="dropdown-item">Un peu d'histoire</router-link>
+                <router-link to="/accueil" class="dropdown-item ">Un peu d'histoire</router-link>
                 <router-link to="/accueil" class="dropdown-item">Nos partenaires</router-link>
                 <router-link to="/accueil" class="dropdown-item">La féderation</router-link>
             </b-nav-item-dropdown>
